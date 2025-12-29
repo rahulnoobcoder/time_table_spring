@@ -38,6 +38,9 @@
         .course-CS60112 { background-color: #ffedd5; border-color: #ea580c; color: #7c2d12; } /* Orange */
         .course-EP61201 { background-color: #f3e8ff; border-color: #9333ea; color: #581c87; } /* Purple */
         .course-CS69202 { background-color: #e5e7eb; border-color: #4b5563; color: #1f2937; } /* Gray */
+        
+        /* NEW COURSE COLOR */
+        .course-AI60006 { background-color: #fef9c3; border-color: #ca8a04; color: #854d0e; } /* Yellow/Gold */
 
         .time-header { width: 80px; text-align: center; font-size: 0.7rem; color: #6b7280; }
     </style>
@@ -83,8 +86,17 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             
-            // 1. Defined Courses based on your image and PDF
+            // 1. Defined Courses
             const myCourses = [
+                { 
+                    id: "AI60006", 
+                    name: "Dependable & Secure AI-ML", 
+                    room: "TBA", // Room not specified in image
+                    times: [
+                        {d: 0, t: 12}, // Mon 12-1
+                        {d: 1, t: 10}, {d: 1, t: 11} // Tue 10-12
+                    ]
+                },
                 { 
                     id: "CS60118", 
                     name: "Cloud Computing", 
