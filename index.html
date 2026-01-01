@@ -39,9 +39,7 @@
         .course-EP61201 { background-color: #f3e8ff; border-color: #9333ea; color: #581c87; } /* Purple */
         .course-CS69202 { background-color: #e5e7eb; border-color: #4b5563; color: #1f2937; } /* Gray */
         .course-AI60006 { background-color: #fef9c3; border-color: #ca8a04; color: #854d0e; } /* Yellow/Gold */
-        
-        /* NEW COURSE COLOR: TEAL */
-        .course-IDG6001 { background-color: #ccfbf1; border-color: #0d9488; color: #115e59; } 
+        .course-IDG6001 { background-color: #ccfbf1; border-color: #0d9488; color: #115e59; } /* Teal */
 
         .time-header { width: 80px; text-align: center; font-size: 0.7rem; color: #6b7280; }
     </style>
@@ -87,12 +85,12 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             
-            // 1. Defined Courses
+            // 1. Defined Courses with Updated Rooms
             const myCourses = [
                 { 
                     id: "AI60006", 
                     name: "Dependable & Secure AI-ML", 
-                    room: "TBA",
+                    room: "NR423", /* Updated manually */
                     times: [
                         {d: 0, t: 12}, // Mon 12-1
                         {d: 1, t: 10}, {d: 1, t: 11} // Tue 10-12
@@ -101,7 +99,7 @@
                 { 
                     id: "CS60118", 
                     name: "Cloud Computing", 
-                    room: "NR224",
+                    room: "NR224", /* Extracted from PDF */
                     times: [
                         {d: 0, t: 8}, {d: 0, t: 9}, // Mon 8-10
                         {d: 1, t: 12} // Tue 12-1
@@ -110,7 +108,7 @@
                 { 
                     id: "CS60003", 
                     name: "High Performance Arch.", 
-                    room: "NR321",
+                    room: "NR321", /* Extracted from PDF */
                     times: [
                         {d: 0, t: 10}, // Mon 10-11
                         {d: 2, t: 8}, {d: 2, t: 9}, // Wed 8-10
@@ -120,7 +118,7 @@
                 { 
                     id: "CS60010", 
                     name: "Deep Learning", 
-                    room: "NR122",
+                    room: "NR122", /* Extracted from PDF */
                     times: [
                         {d: 0, t: 14}, // Mon 2-3
                         {d: 1, t: 16}, {d: 1, t: 17} // Tue 4-6
@@ -129,7 +127,7 @@
                 { 
                     id: "CS60112", 
                     name: "Info. & System Security", 
-                    room: "CSE-119",
+                    room: "CSE-119", /* Extracted from PDF */
                     times: [
                         {d: 2, t: 10}, // Wed 10-11
                         {d: 3, t: 9},  // Thu 9-10
@@ -139,7 +137,7 @@
                 { 
                     id: "EP61201", 
                     name: "Entrepreneurship (EP)", 
-                    room: "NR212",
+                    room: "NR212", /* Updated manually */
                     times: [
                         {d: 0, t: 11}, // Mon 11-12
                         {d: 0, t: 17}, // Mon 5-6
@@ -149,13 +147,12 @@
                 { 
                     id: "CS69202", 
                     name: "Design Lab", 
-                    room: "Lab",
+                    room: "Lab", /* Not specified in PDF */
                     times: [
                         {d: 2, t: 14}, {d: 2, t: 15}, {d: 2, t: 16}, // Wed 2-5
                         {d: 3, t: 14}, {d: 3, t: 15}, {d: 3, t: 16} // Thu 3-4
                     ]
                 },
-                /* --- NEW COURSE ADDED HERE --- */
                 { 
                     id: "IDG6001", 
                     name: "Inner Dev. Goals & Wellbeing", 
